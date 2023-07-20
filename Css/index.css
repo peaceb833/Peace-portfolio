@@ -61,7 +61,7 @@ header{
   width: 100%;
   /* background: #161414;
   background-image: url(../image/7159988-removebg-preview.png); */
-    height: 90vh;
+    height: 70vh;
     display:flex;
     justify-content: space-around;
     /* background-blend-mode: multiply; */
@@ -186,6 +186,9 @@ li a{
   }
   .intro-wrapper{
     margin-top: 8em;
+  }
+  .intro-text{
+    margin-top: 5em;
   }
   .typewrite{
     color: goldenrod;
