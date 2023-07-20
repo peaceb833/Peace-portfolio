@@ -203,7 +203,7 @@ li a{
 .button {
   /* position: fixed;
   border-radius: 50px; */
-  background-color: goldenrod; 
+  
 }
 .fa-download{
   color: #000;
@@ -379,7 +379,8 @@ footer{
   .button {
     /* position: fixed;
     border-radius: 50px; */
-    background-color: goldenrod; 
+    border: 2px solid rgb(216, 193, 145);
+    background-color: transparent;
   }
   #main-menu li {
     margin: 0 10px;}
