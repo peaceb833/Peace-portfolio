@@ -267,8 +267,11 @@ input{
 }
 
 footer{
-  background-color: goldenrod;
+  background-color: rgb(233, 196, 103);
 }
+  .img-footer{
+    border-radius: 50px;
+  }
   @media (max-width: 600px) {
   header{
     display:flex;
