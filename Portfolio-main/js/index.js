@@ -1,8 +1,10 @@
 
 const toggleMenuBtn = document.getElementById('toggle-menu');
-    const mainMenu = document.getElementById('main-menu');
+const section = document.getElementById('section'); 
+const mainMenu = document.getElementById('main-menu');
     toggleMenuBtn.addEventListener('click', () => {
       mainMenu.classList.toggle('active');
+       section.classList.toggle('remove')
     });
 
 
