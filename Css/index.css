@@ -9,11 +9,59 @@ body{
     padding: 0;
     font-family: 'Inter', sans-serif;;
 }
+
+  /* Spinner styles */
+  /* .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .spinner-img{
+    animation: spin 3s 1 ease-in-out;
+  }
+  @keyframes spin {
+     0%{
+     /* transform: translateX(-300px); */
+     /* transform:translate(0%, 0%) rotate(0deg);
+     transform:translateX(-300%); */
+     /* } */
+     /* 100%{
+      transform:translate(0%, 0%) rotate(360deg);
+      transform:translateX(0%);
+     } */
+   
+
+  .spinner .loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 header{
   width: 100%;
   /* background: #161414;
   background-image: url(../image/7159988-removebg-preview.png); */
-    height: 100vh;
+    height: 90vh;
     display:flex;
     justify-content: space-around;
     /* background-blend-mode: multiply; */
@@ -27,6 +75,7 @@ header{
     background-image: url(../image/img1.jpg);
     background-blend-mode: multiply;
     background-size: cover;
+    background-position: center center;
     height: 100vh;
 
   }
@@ -69,6 +118,7 @@ header{
 
 .header{
     justify-content: space-around;  
+
 }
 ul{
     list-style: none;
@@ -150,11 +200,10 @@ li a{
   .about{
     color: goldenrod;
   }
-.download {
-  position: fixed;
-  border-radius: 50px;
-  background-color: goldenrod;
-  
+.button {
+  /* position: fixed;
+  border-radius: 50px; */
+  background-color: goldenrod; 
 }
 .fa-download{
   color: #000;
@@ -280,6 +329,14 @@ footer{
     justify-content: space-between;
      height: 100vh;
   }
+  .header{
+    justify-content: space-around; 
+    background: #080707; 
+    /* border-radius: 0 0 30px 30px; */
+  
+    
+    
+}
   .nav-link.active::after {
     content: '';
     display: block;
@@ -314,10 +371,15 @@ footer{
     text-align: center;
     align-items: center;
     margin-top: 2em;
-    border-bottom: 1px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
 
+  }
+  .button {
+    /* position: fixed;
+    border-radius: 50px; */
+    background-color: goldenrod; 
   }
   #main-menu li {
     margin: 0 10px;}

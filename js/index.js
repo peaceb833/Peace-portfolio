@@ -16,6 +16,19 @@ const mainMenu = document.getElementById('main-menu');
 //     this.classList.add('active');
 //   });
 // });
+  // Display the spinner when the page starts loading
+  window.addEventListener('beforeunload', () => {
+    const spinner = document.querySelector('.spinner');
+    spinner.style.display = 'flex';
+  });
+
+  // Hide the spinner when the page finishes loading
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+        const spinner = document.querySelector('.spinner');
+        spinner.style.display = 'none';
+      }, 10000); // 1 minute in milliseconds
+  });
 
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
