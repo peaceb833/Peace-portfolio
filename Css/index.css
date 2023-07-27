@@ -246,8 +246,7 @@ header{
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center center;
-    height: 100vh;
-
+    height: 80vh;
   }
 
   25%{
@@ -255,32 +254,28 @@ header{
     background-image: url(../image/img2.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 100vh;
-
+    height: 80vh;
   }
   50%{
     background: #332f2f;
     background-image: url(../image/img4.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 100vh;
-
+    height: 80vh;
   }
   75%{
     background:#332f2f;
     background-image: url(../image/img5.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 100vh;
-
+    height: 80vh;
   }
   100%{
     background: #332f2f;
     background-image: url(../image/img6.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    height: 100vh;
- 
+    height: 80vh; 
   }
   
 }
