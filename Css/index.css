@@ -461,7 +461,7 @@ li a{
     
    }
     
-  @keyframes rote{
+  /* @keyframes rote{
     
     0%{
     
@@ -473,7 +473,7 @@ li a{
     
     }
   }
-  
+   */
   .img3{
     /* border: 1px solid goldenrod; */
     border-radius: 20px;
@@ -626,7 +626,7 @@ footer{
         
        }
         
-     @keyframes rote{
+     /* @keyframes rote{
         
         0%{
         
@@ -638,7 +638,7 @@ footer{
         
         }
       
-      }
+      } */
       .img3{
         /* border: 1px solid goldenrod; */
         border-radius: 20px;
