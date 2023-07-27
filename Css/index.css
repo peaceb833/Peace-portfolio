@@ -448,16 +448,17 @@ li a{
     background: #000;
   }
   .section3 h5{
-    color: goldenrod;
+    color: rgb(235, 178, 36);
   }
   .section3 p{
-    color: goldenrod;
+    color: rgba(218, 165, 32, 0.863);
+    font-size: small;
   }
   .main-wrapper{
-    border-right: 1px solid rgba(255, 217, 0, 0.678);}
+   } /* border-right: 1px solid rgba(255, 217, 0, 0.678);} */
   .img-wrapper{
-    border: 1px solid goldenrod;
-    border-radius: 50%;
+    /* border: 1px solid goldenrod; */
+    /* border-radius: 20px; */
     width: 80%;
     margin: 2% auto;
     animation: rote 3s infinite ease-in-out;
@@ -479,8 +480,8 @@ li a{
   }
   
   .img3{
-    border: 1px solid goldenrod;
-    border-radius: 50px;
+    /* border: 1px solid goldenrod; */
+    border-radius: 20px;
   }
 
   .section4 h5{
@@ -621,11 +622,11 @@ footer{
      .main-wrapper{
         border-right: 1px solid  goldenrod;}
       .img-wrapper{
-        border: 1px solid goldenrod;
-        border-radius: 50%;
+        /* border: 1px solid goldenrod; */
+        /* border-radius: 50%; */
         width: 80%;
         margin: 2% auto;
-        animation: rote 3s infinite ease-in-out;
+        animation: rote 5s infinite ease-in-out;
         border-radius: 50px;
         
        }
@@ -644,8 +645,8 @@ footer{
       
       }
       .img3{
-        border: 1px solid goldenrod;
-        border-radius: 50px;
+        /* border: 1px solid goldenrod; */
+        border-radius: 20px;
       }
       .fa-bars{
         background: #000;
