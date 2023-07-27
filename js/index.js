@@ -1,3 +1,15 @@
+window.addEventListener('load', function () {
+  // Select the loading element
+  var loadingElement = document.getElementById('loading');
+
+  // Function to hide the loading element
+  function hideLoading() {
+    loadingElement.style.display = 'none';
+  }
+
+  // Set a 5-second delay and then hide the loading element
+  setTimeout(hideLoading, 5000);
+});
 
 const toggleMenuBtn = document.getElementById('toggle-menu');
 const section = document.getElementById('section'); 

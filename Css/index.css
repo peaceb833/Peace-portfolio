@@ -10,6 +10,176 @@ body{
     font-family: 'Inter', sans-serif;;
 }
 
+#loading {
+  background-color:black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  margin-top: 0px;
+  top: 0px;
+  color: goldenrod;
+  font-weight: 800;
+}
+
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 25%;
+  transform: translate(-50%, -70%);
+}
+
+.loading-infinity {
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -khtml-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loading-infinity div,
+.loading-infinity span {
+  position: absolute;
+}
+
+.loading-infinity div {
+  top: 0;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  animation: ctLoadingrotate 6.9s linear infinite;
+}
+
+.loading-infinity div span {
+  left: -10px;
+  top: 50%;
+  margin: -10px 0 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: goldenrod;
+  box-shadow: 2px 2px 8px rgba(0, 124, 251, 0.09);
+  border-radius: 50%;
+  transform: rotate(90deg);
+  animation: ctLoadingmove 6.9s linear infinite;
+}
+
+.loading-infinity div span:before,
+.loading-infinity div span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  box-shadow: inherit;
+}
+
+.loading-infinity div span:before {
+  animation: ctLoadingdrop1 0.8s linear infinite;
+}
+
+.loading-infinity div span:after {
+  animation: ctLoadingdrop2 0.8s linear infinite 0.4s;
+}
+
+.loading-infinity div:nth-child(2) {
+  animation-delay: -2.3s;
+}
+
+.loading-infinity div:nth-child(2) span {
+  animation-delay: -2.3s;
+}
+
+.loading-infinity div:nth-child(3) {
+  animation-delay: -4.6s;
+}
+
+.loading-infinity div:nth-child(3) span {
+  animation-delay: -4.6s;
+}
+
+@keyframes ctLoadingrotate {
+  50% {
+    transform: rotate(360deg);
+    margin-left: 0;
+  }
+  50.0001%, 100% {
+    margin-left: -70px;
+  }
+}
+@keyframes ctLoadingmove {
+  0%, 50% {
+    left: -10px;
+  }
+  25% {
+    background: var(--secondary-color);
+  }
+  75% {
+    background: rgb(49, 48, 48);
+  }
+  50.0001%, 100% {
+    left: auto;
+    right: -10px;
+  }
+}
+@keyframes ctLoadingdrop1 {
+  100% {
+    transform: translate(32px, 10px) scale(0);
+  }
+}
+@keyframes ctLoadingdrop2 {
+  0% {
+    transform: translate(0, 0) scale(0.9);
+  }
+  100% {
+    transform: translate(32px, -10px) scale(0);
+  }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #loading-center-absolute {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #loading-center-absolute {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #loading-center-absolute {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  #loading-center-absolute {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  #loading-center-absolute {
+    width: 60%;
+  }
+}
   /* Spinner styles */
   /* .spinner {
     position: fixed;
@@ -61,7 +231,7 @@ header{
   width: 100%;
   /* background: #161414;
   background-image: url(../image/7159988-removebg-preview.png); */
-    height: 70vh;
+    height: 50vh;
     display:flex;
     justify-content: space-around;
     /* background-blend-mode: multiply; */
@@ -238,8 +408,8 @@ li a{
 .skill-container-content{
  width: 100%;
   display: flex;
-  
-  animation: moveSkills 14s linear infinite;
+  flex-wrap: wrap;
+  animation: moveSkills 14s linear 1 ;
 }
 
 @keyframes moveSkills {
@@ -247,7 +417,7 @@ li a{
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
 
