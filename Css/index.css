@@ -221,6 +221,36 @@ li a{
   
 
 }
+.section5 {
+    animation: fadeInContent 1s linear 4s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInContent {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.skill-container-content{
+ width: 100%;
+  display: flex;
+  
+  animation: moveSkills 14s linear infinite;
+}
+
+@keyframes moveSkills {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 .skill-container{
   background: goldenrod;
