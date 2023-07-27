@@ -412,14 +412,14 @@ li a{
   animation: moveSkills 14s linear 1 ;
 }
 
-@keyframes moveSkills {
+/* @keyframes moveSkills {
   0% {
     transform: translateX(-100%);
   }
   100% {
     transform: translateX(0%);
   }
-}
+} */
 
 
 .skill-container{
