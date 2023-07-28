@@ -231,7 +231,7 @@ header{
   width: 100%;
   /* background: #161414;
   background-image: url(../image/7159988-removebg-preview.png); */
-    /* height: 80vh; */
+    height: 80vh;
     display:flex;
     justify-content: space-around;
     /* background-blend-mode: multiply; */
@@ -246,7 +246,7 @@ header{
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center center;
-    /* height: 80vh; */
+    height: 80vh;
   }
 
   25%{
@@ -254,28 +254,28 @@ header{
     background-image: url(../image/img2.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-   
+    height: 80vh;
   }
   50%{
     background: #332f2f;
     background-image: url(../image/img4.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-   
+    height: 80vh;
   }
   75%{
     background:#332f2f;
     background-image: url(../image/img5.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-   
+    height: 80vh;
   }
   100%{
     background: #332f2f;
     background-image: url(../image/img6.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    
+    height: 80vh;
   }
   
 }
@@ -353,7 +353,7 @@ li a{
     margin-top: 8em;
   }
   .intro-text{
-    margin-top: 10em;
+    margin-top: 5em;
   }
   .typewrite{
     color: goldenrod;
@@ -526,8 +526,53 @@ footer{
     /* height: 80vh; */
     width: 100%;
     justify-content: space-between;
-     height: 100vh;
+     height: 80vh;
+     animation: change 20s infinite ease-in-out
   }
+
+  @keyframes change {
+    0%{
+      background: #332f2f;
+      background-image: url(../image/img1.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center center;
+      height: 80vh;
+    }
+  
+    25%{
+      background:#332f2f;
+      background-image: url(../image/img2.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      height: 80vh;
+    }
+    50%{
+      background: #332f2f;
+      background-image: url(../image/img4.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      height: 80vh;
+    }
+    75%{
+      background:#332f2f;
+      background-image: url(../image/img5.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      height: 80vh;
+    }
+    100%{
+      background: #332f2f;
+      background-image: url(../image/img6.jpg);
+      background-blend-mode: multiply;
+      background-size: cover;
+      height: 80vh;
+    }
+    
+  }
+  
+  
+  
   .header{
     justify-content: space-around; 
     background: #080707; 
