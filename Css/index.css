@@ -397,7 +397,7 @@ li a{
   font-size: 1.4em;
   font-weight: bold;
   /* box-shadow: 1px 1px 3px midnightblue; */
-  color:#408EC6;
+  color:#007bff;
   width: 40% ;
   text-align: center;
   
@@ -449,7 +449,7 @@ li a{
  
   border-radius: 50%;
   text-align: center;
-  color: #408EC6;
+  color: #007bff;
   background: rgb(45, 45, 77);
   border: 2px solid rgb(26, 26, 87);
 
@@ -466,7 +466,7 @@ li a{
     color: rgb(228, 228, 240);
   }
   .section3 p{
-    color:#408EC6;
+    color:#007bff;
     font-size: small;
   }
   .main-wrapper{
@@ -736,7 +736,7 @@ footer{
     
      border-radius: 0px 0px 50px 50px;
     
-      color: #408EC6;
+      color: #007bff;
     
     }
 
