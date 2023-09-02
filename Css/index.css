@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
+/* all classlist from js */
+
+
 
 body{
     box-sizing: border-box;
@@ -10,15 +13,16 @@ body{
     font-family: 'Inter', sans-serif;;
 }
 
+
 #loading {
-  background-color:black;
+  background-color:midnightblue;
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: 999999;
   margin-top: 0px;
   top: 0px;
-  color: goldenrod;
+  color: rgb(209, 209, 241);
   font-weight: 800;
 }
 
@@ -70,7 +74,7 @@ body{
   width: 20px;
   height: 20px;
   display: block;
-  background: goldenrod;
+  background:blue;
   box-shadow: 2px 2px 8px rgba(0, 124, 251, 0.09);
   border-radius: 50%;
   transform: rotate(90deg);
@@ -253,7 +257,7 @@ header{
     background:#332f2f;
     background-image: url(../image/img2.jpg);
     background-blend-mode: multiply;
-    background-size: cover;
+    background-size: 100%;
     height: 80vh;
   }
   50%{
@@ -298,7 +302,7 @@ li a{
     display: block;
     width: 100%;
     height: 2px;
-    background-color: goldenrod;
+    background-color: midnightblue;
     margin-top: 5px;
     border-bottom-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -347,7 +351,7 @@ li a{
     visibility: hidden;
   }
   .fa-bars{
-     background: #000;
+     color: white;
   }
   .intro-wrapper{
     margin-top: 8em;
@@ -356,17 +360,26 @@ li a{
     margin-top: 5em;
   }
   .typewrite{
-    color: goldenrod;
+    color:#007bffe3;
+    
   }
   .connect{
     border-radius: 30px;
     font-size: 1.4em;
     font-weight: bold;
-    box-shadow: 1px 1px 3px goldenrod;
+    box-shadow: 1px 1px 3px red;
   }
   /* about */
   .about{
-    color: goldenrod;
+    border-bottom: 1px solid midnightblue;
+    border-radius: 30px 0 30px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px midnightblue;
+    color:rgb(51, 51, 117);
+    width: 30% ;
+    margin: 4% auto;
+    
   }
 .button {
   /* position: fixed;
@@ -374,21 +387,28 @@ li a{
   
 }
 .fa-download{
-  color: #000;
+  color: #007bff;
   
 }
 .experience{
-  background: goldenrod;
-  width: 35%;
+  background: midnightblue;
+  border-bottom: 1px solid midnightblue;
+  border-radius: 30px 0 30px 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  /* box-shadow: 1px 1px 3px midnightblue; */
+  color:#007bff;
+  width: 40% ;
+  text-align: center;
   
-  border-radius: 0px 10px 10px 0px;
-  color: white;
-  
-
+}
+.fa-arrow-right{
+  color: #007bff;
 }
 .section5 {
     animation: fadeInContent 1s linear 4s forwards;
     opacity: 0;
+    
   }
 
   @keyframes fadeInContent {
@@ -429,9 +449,9 @@ li a{
  
   border-radius: 50%;
   text-align: center;
-  color: white;
-  background: goldenrod;
-  border: 2px solid rgb(90, 66, 5);
+  color: #007bff;
+  background: rgb(45, 45, 77);
+  border: 2px solid rgb(26, 26, 87);
 
   
   
@@ -440,13 +460,13 @@ li a{
 
   /* service */
   .section3{
-    background: #000;
+    background: rgb(8, 8, 41);
   }
   .section3 h5{
-    color: rgb(235, 178, 36);
+    color: rgb(228, 228, 240);
   }
   .section3 p{
-    color: rgba(218, 165, 32, 0.863);
+    color:#007bff;
     font-size: small;
   }
   .main-wrapper{
@@ -480,7 +500,7 @@ li a{
   }
 
   .section4 h5{
-color: goldenrod;
+color: rgb(8, 8, 41);
   }
 
 
@@ -498,10 +518,12 @@ color: goldenrod;
   .img4{
     width: 400px;
   }
-
+.port-cont{
+  background-color: rgb(8, 8, 41);
+}
   /* testimonial */
   .section5{
-    background: #000;
+    
     
   }
 .section5 h5{
@@ -515,7 +537,7 @@ input{
 }
 
 footer{
-  background-color: rgb(233, 196, 103);
+  background-color: rgb(34, 34, 33);
 }
   .img-footer{
     border-radius: 50px;
@@ -532,7 +554,7 @@ footer{
 
   @keyframes change {
     0%{
-      background: #332f2f;
+      background: rgb(44, 44, 100);
       background-image: url(../image/img1.jpg);
       background-blend-mode: multiply;
       background-size: cover;
@@ -541,28 +563,28 @@ footer{
     }
   
     25%{
-      background:#332f2f;
+      background:rgb(44, 44, 100);
       background-image: url(../image/img2.jpg);
       background-blend-mode: multiply;
       background-size: cover;
       height: 80vh;
     }
     50%{
-      background: #332f2f;
+      background: rgb(44, 44, 100);
       background-image: url(../image/img4.jpg);
       background-blend-mode: multiply;
       background-size: cover;
       height: 80vh;
     }
     75%{
-      background:#332f2f;
+      background:rgb(44, 44, 100);
       background-image: url(../image/img5.jpg);
       background-blend-mode: multiply;
       background-size: cover;
       height: 80vh;
     }
     100%{
-      background: #332f2f;
+      background:rgb(44, 44, 100);
       background-image: url(../image/img6.jpg);
       background-blend-mode: multiply;
       background-size: cover;
@@ -575,7 +597,7 @@ footer{
   
   .header{
     justify-content: space-around; 
-    background: #080707; 
+    background:rgb(4, 4, 26); 
     /* border-radius: 0 0 30px 30px; */
   
     
@@ -587,6 +609,7 @@ footer{
     width: 10%;
     height: 2px;
     background-color: goldenrod;
+    color: rgb(228, 228, 255);
     margin: 5px auto;
     border-bottom-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -615,7 +638,7 @@ footer{
     text-align: center;
     align-items: center;
     margin-top: 2em;
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid #007bffa6;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
 
@@ -623,7 +646,7 @@ footer{
   .button {
     /* position: fixed;
     border-radius: 50px; */
-    border: 2px solid rgb(216, 193, 145);
+    border: 2px solid #007bff;
     background-color: transparent;
   }
   #main-menu li {
@@ -633,7 +656,7 @@ footer{
       border-radius: 30px;
       font-size: 1em;
       font-weight: bold;
-      box-shadow: 1px 1px 3px goldenrod;
+      box-shadow: 2px 1px 4px #007bff;
     }
     .img{
         animation: expo 3s infinite ease-in-out; 
@@ -677,7 +700,7 @@ footer{
         
       transform: rotateY(0deg);
         }
-        
+  
         100%{
           transform: rotateY(360deg);
         
@@ -701,7 +724,7 @@ footer{
     }
     .skill-container{
 
-      background: goldenrod;
+      background: rgb(31, 31, 77);
     
       width: 80%;
     
@@ -713,7 +736,7 @@ footer{
     
      border-radius: 0px 0px 50px 50px;
     
-      color: white;
+      color: #007bff;
     
     }
 

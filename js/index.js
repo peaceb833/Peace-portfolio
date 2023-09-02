@@ -19,16 +19,60 @@ const mainMenu = document.getElementById('main-menu');
        section.classList.toggle('remove')
     });
 
+    
+  // Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
-// const navLinks = document.querySelectorAll('.nav-link');
 
-// navLinks.forEach(link => {
-//   link.addEventListener('click', function() {
-//     navLinks.forEach(link => link.classList.remove('active'));
-//     this.classList.add('active');
-//   });
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (event) => {
+     const input = document.querySelector('input');
+    const fullName = document.querySelector('input[name="FullName"]');
+    const email = document.querySelector('input[name="Email"]');
+    const phoneNumber = document.querySelector('input[name="PhoneNumber"]');
+    const message = document.querySelector('textarea[name="message"]');
+
+    if (fullName.value === '' || email.value === '' || phoneNumber.value === '' || message.value === '') {
+        event.preventDefault();
+        input.classList.add('red')
+    }
+});
+// Parallax scrolling effect
+window.addEventListener('scroll', () => {
+  const parallax = document.querySelector('.parallax');
+  parallax.style.transform = `translateY(${window.scrollY * 0.5}px)`;
+});
+
+// Scroll progress indicator
+window.addEventListener('scroll', () => {
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  const windowHeight = window.innerHeight;
+  const scrollHeight = document.documentElement.scrollHeight - windowHeight;
+  const scrolled = (window.scrollY / scrollHeight) * 100;
+  scrollIndicator.style.width = `${scrolled}%`;
+});
+
+
+
+
+// window.addEventListener('scroll', () => {
+//   const header = document.querySelector('header');
+//   if (window.scrollY > 100) {
+//       header.classList.add('sticky');
+//   } else {
+//       header.classList.remove('sticky');
+//   }
 // });
-  // Display the spinner when the page starts loading
+
+
   window.addEventListener('beforeunload', () => {
     const spinner = document.querySelector('.spinner');
     spinner.style.display = 'flex';
