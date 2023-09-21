@@ -15,7 +15,7 @@ body{
 
 
 #loading {
-  background-color:midnightblue;
+  background-color:rgb(4, 4, 26);
   height: 100%;
   width: 100%;
   position: fixed;
@@ -74,7 +74,7 @@ body{
   width: 20px;
   height: 20px;
   display: block;
-  background:blue;
+  background:goldenrod;
   box-shadow: 2px 2px 8px rgba(0, 124, 251, 0.09);
   border-radius: 50%;
   transform: rotate(90deg);
@@ -245,8 +245,8 @@ header{
 }
 @keyframes change {
   0%{
-    background: #332f2f;
-    background-image: url(../image/img1.jpg);
+    /* background:linear-gradient(to  #7028E4,#E5B2CA ); */
+    /* background-image: url(../image/img1.jpg); */
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center center;
@@ -254,28 +254,28 @@ header{
   }
 
   25%{
-    background:#332f2f;
+    background:#212529;
     background-image: url(../image/img2.jpg);
     background-blend-mode: multiply;
     background-size: 100%;
     height: 80vh;
   }
   50%{
-    background: #332f2f;
+    background: #212529;
     background-image: url(../image/img4.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     height: 80vh;
   }
   75%{
-    background:#332f2f;
+    background:#212529;
     background-image: url(../image/img5.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     height: 80vh;
   }
   100%{
-    background: #332f2f;
+    background: #212529;
     background-image: url(../image/img6.jpg);
     background-blend-mode: multiply;
     background-size: cover;
@@ -295,14 +295,14 @@ ul{
 }
 li a{
     padding: 1em;
-    color: gold;
+    color: goldenrod;
 }
 .nav-link.active::after {
     content: '';
     display: block;
     width: 100%;
     height: 2px;
-    background-color: midnightblue;
+    background-color:rgb(224, 214, 187);
     margin-top: 5px;
     border-bottom-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -351,7 +351,7 @@ li a{
     visibility: hidden;
   }
   .fa-bars{
-     color: white;
+     color:goldenrod;
   }
   .intro-wrapper{
     margin-top: 8em;
@@ -360,50 +360,71 @@ li a{
     margin-top: 5em;
   }
   .typewrite{
-    color:#007bffe3;
+    color:goldenrod;
     
   }
   .connect{
     border-radius: 30px;
     font-size: 1.4em;
     font-weight: bold;
-    box-shadow: 1px 1px 3px red;
+    /* box-shadow: 1px 1px 3px red; */
   }
   /* about */
   .about{
-    border-bottom: 1px solid midnightblue;
+    border-bottom: 1px solid gold;
     border-radius: 30px 0 30px 0;
     font-size: 1.4em;
     font-weight: bold;
-    box-shadow: 1px 1px 3px midnightblue;
-    color:rgb(51, 51, 117);
+    box-shadow: 1px 1px 3px goldenrod;
+    color:#212529;
     width: 30% ;
     margin: 4% auto;
     
   }
+  /* .about::before{
+
+      content: '';
+      display: block;
+      width: 10%;
+      height: 27px;
+      background-color:goldenrod;
+      margin-top: 5px;
+      /* border-bottom-left-radius: 50px;
+      border-bottom-left-radius: 50px; */
+     
+  /* } */
 .button {
   /* position: fixed;
   border-radius: 50px; */
+  border: 2px solid goldenrod;
+  background-color: transparent;
   
 }
 .fa-download{
   color: #007bff;
   
 }
+.exp-cont{
+  background-color: #212529;
+
+}
 .experience{
-  background: midnightblue;
-  border-bottom: 1px solid midnightblue;
+  background: white;
+  /* border-bottom: 1px solid goldenrod; */
   border-radius: 30px 0 30px 0;
   font-size: 1.4em;
   font-weight: bold;
   /* box-shadow: 1px 1px 3px midnightblue; */
-  color:#007bff;
+  color: #212529;
   width: 40% ;
   text-align: center;
   
 }
 .fa-arrow-right{
-  color: #007bff;
+  color: goldenrod;
+}
+.fa-arrow-left{
+  color: goldenrod;
 }
 .section5 {
     animation: fadeInContent 1s linear 4s forwards;
@@ -438,20 +459,25 @@ li a{
 
 
 .skill-container{
-  background: goldenrod;
+  /* background: goldenrod; */
   width: 60%;
   margin: 2% auto;
   /* border-radius: 0px 10px 10px 0px; */
- border-radius: 0px 0px 50px 50px;
-  color: white;
+  border-radius: 0px 10px 10px 0px;
+  border-width: 5%;
+  border-bottom: 3px dashed goldenrod;
+
+ border-radius: 0px 0px 80px 80px;
+
+  color:goldenrod;
 }
 .skill{
  
   border-radius: 50%;
   text-align: center;
-  color: #007bff;
-  background: rgb(45, 45, 77);
-  border: 2px solid rgb(26, 26, 87);
+  color:goldenrod;
+  background: #212529;
+  border: 2px solid #212529;
 
   
   
@@ -460,13 +486,13 @@ li a{
 
   /* service */
   .section3{
-    background: rgb(8, 8, 41);
+    background: #212529;
   }
   .section3 h5{
-    color: rgb(228, 228, 240);
+    color: goldenrod;
   }
   .section3 p{
-    color:#007bff;
+    color:goldenrod;
     font-size: small;
   }
   .main-wrapper{
@@ -500,7 +526,7 @@ li a{
   }
 
   .section4 h5{
-color: rgb(8, 8, 41);
+color: #212529;
   }
 
 
@@ -518,8 +544,25 @@ color: rgb(8, 8, 41);
   .img4{
     width: 400px;
   }
+  .special h4 {
+    /* background-color:  #212529; */
+    color: #212529;
+  }
+  .special li{
+   color: #212529;
+   list-style-type: square;
+  }
 .port-cont{
-  background-color: rgb(8, 8, 41);
+  background-color:  #212529;
+  height: 50vh;
+  
+}
+.port-cont h4{
+  color: white;
+}
+.port-cont li{
+  color:white;
+  list-style-type: none;
 }
   /* testimonial */
   .section5{
@@ -548,47 +591,47 @@ footer{
     /* height: 80vh; */
     width: 100%;
     justify-content: space-between;
-     height: 80vh;
+     height: 90vh;
      animation: change 20s infinite ease-in-out
   }
 
   @keyframes change {
     0%{
-      background: rgb(44, 44, 100);
+      background: #212529;
       background-image: url(../image/img1.jpg);
       background-blend-mode: multiply;
       background-size: cover;
       background-position: center center;
-      height: 80vh;
+      height: 90vh;
     }
   
     25%{
-      background:rgb(44, 44, 100);
+      background:#212529;
       background-image: url(../image/img2.jpg);
       background-blend-mode: multiply;
       background-size: cover;
-      height: 80vh;
+      height: 90vh;
     }
     50%{
-      background: rgb(44, 44, 100);
+      background: #212529;
       background-image: url(../image/img4.jpg);
       background-blend-mode: multiply;
       background-size: cover;
-      height: 80vh;
+      height: 90vh;
     }
     75%{
-      background:rgb(44, 44, 100);
+      background:#212529;
       background-image: url(../image/img5.jpg);
       background-blend-mode: multiply;
       background-size: cover;
-      height: 80vh;
+      height: 90vh;
     }
     100%{
-      background:rgb(44, 44, 100);
+      background:#212529;
       background-image: url(../image/img6.jpg);
       background-blend-mode: multiply;
       background-size: cover;
-      height: 80vh;
+      height: 90vh;
     }
     
   }
@@ -597,7 +640,7 @@ footer{
   
   .header{
     justify-content: space-around; 
-    background:rgb(4, 4, 26); 
+    /* background:rgb(4, 4, 26);  */
     /* border-radius: 0 0 30px 30px; */
   
     
@@ -646,7 +689,7 @@ footer{
   .button {
     /* position: fixed;
     border-radius: 50px; */
-    border: 2px solid #007bff;
+    border: 2px solid goldenrod;
     background-color: transparent;
   }
   #main-menu li {
@@ -656,7 +699,7 @@ footer{
       border-radius: 30px;
       font-size: 1em;
       font-weight: bold;
-      box-shadow: 2px 1px 4px #007bff;
+      box-shadow: 2px 1px 4px goldenrod;
     }
     .img{
         animation: expo 3s infinite ease-in-out; 
@@ -683,7 +726,7 @@ footer{
     
      }
      .main-wrapper{
-        border-right: 1px solid  goldenrod;}
+        border-right: 1px solid  grey;}
       .img-wrapper{
         /* border: 1px solid goldenrod; */
         /* border-radius: 50%; */
@@ -691,6 +734,7 @@ footer{
         margin: 2% auto;
         animation: rote 5s infinite ease-in-out;
         border-radius: 50px;
+        /* border-bottom: 1px solid grey; */
         
        }
         
@@ -710,33 +754,34 @@ footer{
       .img3{
         /* border: 1px solid goldenrod; */
         border-radius: 20px;
+        margin-left: -15px;
       }
       .fa-bars{
-        background: #000;
+        color: goldenrod;
         margin-bottom: 2em;
      }
      .section1{
       margin-top: 1em;
     }
     .intro-wrapper{
-      margin-top: 2em;
+      margin-top: 1.5em;
      
     }
     .skill-container{
 
-      background: rgb(31, 31, 77);
+      /* background: goldenrod; */
     
       width: 80%;
     
       margin: 2% auto;
     
-      /* border-radius: 0px 10px 10px 0px; */
+      border-radius: 0px 10px 10px 0px;
+      border-width: 5%;
+      border-bottom: 3px dashed goldenrod;
     
-      /* border-bottom: 2px dashed goldenrod; */
+     border-radius: 0px 0px 80px 80px;
     
-     border-radius: 0px 0px 50px 50px;
-    
-      color: #007bff;
+      color:goldenrod;
     
     }
 
